@@ -86,3 +86,18 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+temp/
+tmp/
+.idea/
+femasGateway
+ibGateway
+ksgoldGateway
+ksotpGateway
+ltsGateway
+oandaGateway
+okcoinGateway
+sgitGateway
+shzdGateway
+windGateway
+xspeedGateway
