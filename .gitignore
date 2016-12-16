@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -87,3 +86,18 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+temp/
+tmp/
+.idea/
+femasGateway
+ibGateway
+ksgoldGateway
+ksotpGateway
+ltsGateway
+oandaGateway
+okcoinGateway
+sgitGateway
+shzdGateway
+windGateway
+xspeedGateway
