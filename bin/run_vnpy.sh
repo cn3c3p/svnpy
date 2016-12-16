@@ -1,10 +1,5 @@
 #/bin/bash
 
-# 直接启动
+# 直接运行 vnpy 项目代码，将项目代码目录vn.trader绑定到容器的/opt/svnpy/vn.trader路径。
 cd ..
-
-# 直接启动
-# python vtMain.py
-
-# 在 docker 中启动
-docker run --name run_svnpy --rm -v `pwd`:/opt/svnpy -it svnpy /bin/bash
+docker run --name run_svnpy --rm -v `pwd`/vn.trader:/opt/svnpy/vn.trader svnpy

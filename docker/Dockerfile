@@ -46,6 +46,9 @@ RUN echo "" > /etc/apt/sources.list \
 #    && echo "deb-src http://mirrors.163.com/ubuntu/ precise-backports main restricted universe multiverse" >> /etc/apt/sources.list \
 #    && apt-get clean
 
+# 安装编译环境
+RUN apt-get install -y build-essential libboost-all-dev python-dev cmake
+
 # 安装 conda
 RUN echo "从获取 apt 软件" \
     && apt-get install bzip2 \
@@ -62,7 +65,5 @@ RUN echo "从获取 apt 软件" \
     && conda clean -ay \
     && echo "安装结束"
 
-# 安装编译环境
-RUN apt-get install -y build-essential libboost-all-dev python-dev cmake
-
-#CMD ["conda", "list"]
+# ENTRYPOINT [ "python", "/opt/svnpy/vn.trader/vtMain.py" ]
+CMD [ "python", "/opt/svnpy/vn.trader/vtMain.py"]

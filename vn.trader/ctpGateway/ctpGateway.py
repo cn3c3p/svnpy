@@ -686,7 +686,7 @@ class CtpTdApi(TdApi):
         account = VtAccountData()
         account.gatewayName = self.gatewayName
 
-        print("CTP is OK ! balance : {balance} : ".format(**data))
+        print("CTP is OK ! balance : {balance} ".format(**data))
 
         # 账户代码
         account.accountID = data['AccountID']
