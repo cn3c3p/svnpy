@@ -27,7 +27,10 @@ def initDeamon(mainEngine):
     import threading
     waitSecond = 20  # 秒
     print(u"close after %s sec  ..." % waitSecond)
-    threading.Timer(waitSecond, mainEngine.exit).start()
+    def closeServe():
+        print(u"time to close vnpy ...")
+        mainEngine.exit()
+    threading.Timer(waitSecond, closeServe).start()
 
     # 建立 CTP 链接
     mainEngine.dbConnect()

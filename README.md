@@ -9,7 +9,7 @@
 bash build_images.sh
 ```
 
-漫长的等待后之后，``````查看
+漫长的等待后之后，查看
 ```
 ➜  ~ docker images
 REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
@@ -41,3 +41,9 @@ CTP is OK ! balance : 1000000
 CTP is OK ! balance : 1000000
 ```
 
+## Q&A
+*Q: *关于Windows下?
+*A: *也许应该大概可能在```Git Bash```中可以直接可以完成 build 。
+
+*Q: *一大堆的 "No module named" ?
+*A: *目前只编译了CTP的接口，其余的接口文件都被删掉了，有需要以后可以加回来。不用在意这些细节。
